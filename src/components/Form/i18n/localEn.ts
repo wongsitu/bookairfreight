@@ -11,6 +11,9 @@ const localeEn = {
       "Starting Country and Destination Country must be different",
     REQUIRED_FIELD: "This is a required field",
     NON_ZERO_PRICE: "Insert a price greater than zero",
+
+    FIELD_GREATER_THAN: (size: number) =>
+      `Field value should be greater than ${size} character`,
   },
 };
 

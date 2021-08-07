@@ -99,7 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(59, 91, 152);
+  color: #0078d7;
 }
 
 .results--header-route-title {
@@ -122,6 +122,7 @@
 .results--price {
   font-family: sans-serif;
   font-size: 40px;
+  padding: 10px 0px;
 }
 
 .error-message {
@@ -148,5 +149,11 @@
 
   .results--container-price {
     height: 80%;
+  }
+
+  .results--price {
+    font-family: sans-serif;
+    font-size: 40px;
+    padding: 0px;
   }
 }

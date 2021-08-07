@@ -29,7 +29,7 @@ const Form = () => {
   }, [isStartingCountryValid, isDestinationCountryValid, destinationCountry, startingCountry, setError, clearErrors])
 
   const onSubmit = async (payload: FormData) => {
-    // IRL: THIS WOULD BE AN API CALL
+    // This would be an API call in a real app
     if (areCountriesValid) {
       try {
         const { success, data } = await calculateResult(payload)
@@ -45,7 +45,7 @@ const Form = () => {
           })
         }
       } catch (err) {
-        // I'D HANDLE IT WITH SOME UI CHANGE OR SENTRY WARNING
+        // I'd handle this error with some ui change or sentry warning
         console.log(err)
       }
     } else {

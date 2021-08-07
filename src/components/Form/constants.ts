@@ -6,11 +6,11 @@ export const textValidations: RegisterOptions<FieldValues> = {
   required: { value: true, message: localeEn.en.REQUIRED_FIELD },
   maxLength: {
     value: 20,
-    message: "Field value should be greater than 20 characters",
+    message: localeEn.en.FIELD_GREATER_THAN(20),
   },
   minLength: {
     value: 3,
-    message: "Field value should be greater than 3 characters",
+    message: localeEn.en.FIELD_GREATER_THAN(3),
   },
 };
 
